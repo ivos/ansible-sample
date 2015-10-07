@@ -1,0 +1,4 @@
+---
+- hosts: copy-targets
+  roles:
+    - copy-target

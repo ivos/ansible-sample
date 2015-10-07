@@ -1,0 +1,8 @@
+---
+- name: clone git repo
+  git: repo=git@github.com:ivos/ansible-sample.git
+      dest={{ local_tmp_dir }}
+      accept_hostkey=True
+
+- name: copy static files to target
+  copy: src=bla.txt dest={{ remote_dir }}/

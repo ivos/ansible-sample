@@ -1,0 +1,4 @@
+---
+  remote_user: test
+  remote_dir: /home/{{ ansible_ssh_user }}/tmp
+  local_tmp_dir: tmp

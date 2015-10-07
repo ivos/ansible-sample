@@ -1,0 +1,15 @@
+local ansible_ssh_host=localhost
+# ansible_connection=local
+
+[webservers]
+web ansible_ssh_host=10.10.10.10
+
+[appservers]
+app ansible_ssh_host=20.20.20.20
+
+[copy-targets]
+app
+
+[ec2-servers]
+web
+app
